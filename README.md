@@ -16,11 +16,12 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Improve and customize the user interface through styling and coloring
-- [ ] Implement orientation responsivity
+- [X] Improve and customize the user interface through styling and coloring
+- [X] Implement orientation responsivity
   - App should neatly arrange data in both landscape and portrait mode
-- [ ] Implement Glide to display placeholder graphics during loading
-  - Note: this feature is difficult to capture in a GIF without throttling internet speeds.  Instead, include an additional screencap of your Glide code implementing the feature.  (<10 lines of code)
+- [X] Implement Glide to display placeholder graphics during loading
+  - Note: this feature is difficult to capture in a GIF without throttling internet speeds.  Am additional screencap of the Glide code implementing the feature. 
+  <img src='https://github.com/TrongQuocLe/FlixsterKotlin/blob/main/Glide_placeholder.png' title='Screencap of the Glide code' width='' alt='Screencap of the Glide code to display graphics during loading' />
 
 The following **additional** features are implemented:
 
