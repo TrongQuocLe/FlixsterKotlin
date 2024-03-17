@@ -44,7 +44,6 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
 //            Glide.with(context).load(movie.posterImageUrl).into(ivPoster)
             // Placeholder image resource
             val placeholderImage: Drawable = ContextCompat.getDrawable(context, R.drawable.placeholder_image)!!
-
             // Load image with Glide
             Glide.with(context)
                 .load(movie.posterImageUrl)
