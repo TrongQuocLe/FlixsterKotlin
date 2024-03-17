@@ -5,7 +5,7 @@ import org.json.JSONArray
 // Movie class represents a movie object to be displayed in the UI
 data class Movie (
     val movieID: Int,
-    private val posterPath: String, // as what we care is about the posterImageUrl and no this parameter it is set to private
+    private val posterPath: String,
     val title: String,
     val overview: String,
 ){

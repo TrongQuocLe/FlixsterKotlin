@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Placeholder image background -->
+    <path
+        android:fillColor="@color/secondary_color"
+        android:pathData="M4,5v14l8-7L4,5zM20,5v14h-6V5h6z" />
+
+    <!-- Placeholder image icon (example) -->
+    <path
+        android:fillColor="@color/secondary_color"
+        android:pathData="M0 0h24v24H0z" />
+</vector>

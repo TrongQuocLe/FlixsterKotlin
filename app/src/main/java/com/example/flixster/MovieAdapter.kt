@@ -1,14 +1,17 @@
 package com.example.flixster
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 
 private const val TAG = "MovieAdapter"
 
@@ -38,7 +41,18 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
         fun bind(movie: Movie){
             tvTitle.text = movie.title
             tvOverview.text = movie.overview
-            Glide.with(context).load(movie.posterImageUrl).into(ivPoster)
+//            Glide.with(context).load(movie.posterImageUrl).into(ivPoster)
+            // Placeholder image resource
+            val placeholderImage: Drawable = ContextCompat.getDrawable(context, R.drawable.placeholder_image)!!
+
+            // Load image with Glide
+            Glide.with(context)
+                .load(movie.posterImageUrl)
+                .apply(
+                    RequestOptions()
+                    .placeholder(placeholderImage) // Set placeholder
+                    .error(placeholderImage)) // Set error placeholder if loading fails
+                .into(ivPoster)
         }
     }
 

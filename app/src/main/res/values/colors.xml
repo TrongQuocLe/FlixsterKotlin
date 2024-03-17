@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<!--    Primary Color: #4ECDC4 (Turquoise)-->
+<!--    Secondary Color: #F7FFF7 (Light Gray)-->
+<!--    Accent Color: #FF6B6B (Coral)-->
+<!--    Background Color: #1B262C (Dark Blue)-->
+<!--    Text Color: #FFFFFF (White)-->
+    <color name="primary_color">#4ECDC4</color>
+    <color name="accent_color">#FF6B6B</color>
+    <color name="secondary_color">#F7FFF7</color>
+    <color name="background_color">#1B262C</color>
+
 </resources>
