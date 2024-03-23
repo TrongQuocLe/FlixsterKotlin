@@ -12,7 +12,8 @@ import org.json.JSONException
 
 
 private const val TAG = "MainActivity"
-private const val NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
+private const val NOW_PLAYING_URL = "https://api.themoviedb.org/3/movie/nowplaying/day?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
+private const val NOW_TRENDING_URL = "https://api.themoviedb.org/3/trending/tv/day?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val client = AsyncHttpClient()
-        client.get(NOW_PLAYING_URL, object: JsonHttpResponseHandler(){
+        client.get(NOW_TRENDING_URL, object: JsonHttpResponseHandler(){
             override fun onFailure(
                 statusCode: Int,
                 headers: Headers?,
