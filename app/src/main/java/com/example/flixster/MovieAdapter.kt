@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 
 private const val TAG = "MovieAdapter"
@@ -47,6 +48,7 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             // Load image with Glide
             Glide.with(context)
                 .load(movie.posterImageUrl)
+                .transform(RoundedCorners(20))
                 .apply(
                     RequestOptions()
                     .placeholder(placeholderImage) // Set placeholder
